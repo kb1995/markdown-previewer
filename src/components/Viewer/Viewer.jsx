@@ -4,8 +4,7 @@ import {} from './Viewer.styled'
 class Viewer extends Component {
     render() {
         return (
-            <div>
-                viewer
+            <div dangerouslySetInnerHTML={{ __html: this.props.markdown }}>
             </div>
         );
     }

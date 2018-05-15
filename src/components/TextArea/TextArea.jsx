@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import {} from './TextArea.styled'
+import {TypingArea} from './TextArea.styled'
 
 class TextArea extends Component {
     render() {
         return (
-            <div>
-                textarea
-            </div>
+            <TypingArea onChange = {this.props.handleChange.bind(this)}/>
         );
     }
 }
