@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
-export const Div = styled.div`
-    text-align: ${props => props.center ? "center" : "left"}
+export const Flex = styled.div`
+    display: flex;
+    height: 100%;
+    background-color: lightgray;
+    
+    text-align: ${props => props.center ? "center" : "left"};
+
+    >div{
+        margin: 20px 30px;
+    }
 `

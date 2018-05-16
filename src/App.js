@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import TextArea from './components/TextArea/TextArea'
 import Viewer from './components/Viewer/Viewer'
-import { Div } from './App.styled'
+import { Flex } from './App.styled'
 import marked from 'marked'
+
+
 
 class App extends Component {
   state = { 
-    text: '',
+    text: "",
     markdown: '',
   }
 
@@ -16,12 +18,13 @@ class App extends Component {
       markdown: marked(e.target.value)
     })
   }
+
   render() {
     return (
-      <Div center>
-        <TextArea handleChange = {this.handleChange} />
+      <Flex center>
+        <TextArea text = {this.state.text} handleChange = {this.handleChange} />
         <Viewer markdown = {this.state.markdown}></Viewer>
-      </Div>
+      </Flex>
     );
   }
 }

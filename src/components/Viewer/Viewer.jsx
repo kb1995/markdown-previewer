@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {} from './Viewer.styled'
+import {Output} from './Viewer.styled'
 
 class Viewer extends Component {
     render() {
         return (
-            <div dangerouslySetInnerHTML={{ __html: this.props.markdown }}>
-            </div>
+            <Output dangerouslySetInnerHTML={{ __html: this.props.markdown }}>
+            </Output>
         );
     }
 }
