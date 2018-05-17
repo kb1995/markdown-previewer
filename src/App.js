@@ -8,7 +8,26 @@ import marked from 'marked'
 
 class App extends Component {
   state = { 
-    text: "",
+    text: `# Github markdown previewer by Kristiyan.
+
+- Feel free to check out my  <a href="https://github.com/kb1995" target="_blank">Github Profile</a>.
+
+## Here is a short introduction on Github markdown
+
+# Main heading
+## Medium heading
+### Small heading
+
+You can quote with *>* symbol
+> Pardon my French
+
+You can create a list with - or *
+
+- add changes
+- create a commit
+- push it to the remote repo
+
+`,
     markdown: '',
   }
 
@@ -19,9 +38,15 @@ class App extends Component {
     })
   }
 
+  componentDidMount(){
+    this.setState({
+      markdown: marked(this.state.text)
+    })
+  }
+
   render() {
     return (
-      <Flex center>
+      <Flex>
         <TextArea text = {this.state.text} handleChange = {this.handleChange} />
         <Viewer markdown = {this.state.markdown}></Viewer>
       </Flex>

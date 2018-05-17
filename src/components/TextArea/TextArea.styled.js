@@ -5,6 +5,9 @@ export const Div = styled.div`
 `
 
 export const TypingArea = styled.textarea`
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+    font-family: 'Roboto Mono', monospace;
     font-size:12px; 
     resize: vertical;
     height: 100%;

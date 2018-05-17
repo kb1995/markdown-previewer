@@ -9,5 +9,6 @@ export const Flex = styled.div`
 
     >div{
         margin: 20px 30px;
+        text-align: left;
     }
 `
