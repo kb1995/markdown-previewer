@@ -12,18 +12,18 @@ class App extends Component {
 
 - Feel free to check out my  <a href="https://github.com/kb1995" target="_blank">Github Profile</a>.
 
-## Here is a short introduction on Github markdown
+## Here is a short introduction to Github markdown
 
 # Main heading
 ## Medium heading
 ### Small heading
 
-You can quote with *>* symbol
-> Pardon my French
+You can quote with the > symbol
+> This is a deep quote
 
 You can create a list with - or *
 
-- add changes
+- stage the changes
 - create a commit
 - push it to the remote repo
 
